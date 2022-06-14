@@ -1,6 +1,7 @@
 # Junk Files 
 *.DS_Store
 __pycache__
+*ipynb_checkpoints
 
 # Data Files
-data/*.csv
+*.csv
