@@ -2,3 +2,5 @@
 *.DS_Store
 __pycache__
 
+# Data Files
+# data/*.csv
