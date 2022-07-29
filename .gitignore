@@ -6,3 +6,5 @@ __pycache__
 # Data Files
 data/*
 *wandb*
+sequence_aware_recsys/models
+sequence_aware_recsys/logs
