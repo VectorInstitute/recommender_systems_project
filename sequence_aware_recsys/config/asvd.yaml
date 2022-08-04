@@ -8,7 +8,7 @@ data:
 #model
 model:
     method : classification # classification or regression
-    model_type : GRU4Rec
+    model_type : A2SVD
     layer_sizes : [100, 64]  # layers' size of DNN. In this example, DNN has two layers, and each layer has 100 hidden nodes.
     activation : [relu, relu] # activation function for DNN
     user_dropout: True 
@@ -35,10 +35,10 @@ train:
     batch_size : 400  # batch size, should be constrained as an integer multiple of the number of (1 + train_num_ngs) when need_sample is True
     enable_BN : True  # whether to use batch normalization in hidden layers
     EARLY_STOP : 10 # the number of epoch that controls EARLY STOPPING
-    max_seq_length : 50 # the maximum number of records in the history sequence
-    hidden_size : 40 # the shape of hidden size used in RNN 
+    max_seq_length : 50 # the maximum number of records in the history 
     need_sample: True # whether to perform dynamic negative sampling in mini-batch
     train_num_ngs: 4 # indicates how many negative instances followed by one positive instances if need_sample is True
+    attention_size : 40 
 
 #show info
 #metric :'auc', 'logloss', 'group_auc'
@@ -46,10 +46,10 @@ info:
     show_step : 100   # print training information after a certain number of mini-batch 
     save_model: True   # whether to save models
     save_epoch : 1    # if save_model is set to True, save the model every save_epoch.
-    metrics : ['auc','logloss']  # metrics for evaluation.
-    pairwise_metrics : ['mean_mrr', 'ndcg@2;4;6', "group_auc"]  # pairwise metrics for evaluation, available when pairwise comparisons are needed
-    MODEL_DIR : ./tests/resources/deeprec/gru4rec/model/gru4rec_model/  # directory of saved models.
-    SUMMARIES_DIR : ./tests/resources/deeprec/gru4rec/summary/gru4rec_summary/  # directory of saved summaries.
+    metrics : ['auc']  # metrics for evaluation.
+    pairwise_metrics : ['ndcg@2;4;6', "group_auc"]  # pairwise metrics for evaluation, available when pairwise comparisons are needed
+    MODEL_DIR : ./tests/resources/deeprec/a2svd/model/a2svd_model/   # directory of saved models.
+    SUMMARIES_DIR : ./tests/resources/deeprec/a2svd/summary/a2svd_summary/   # directory of saved summaries.
     write_tfevents : True  # whether to save summaries.
 
     
