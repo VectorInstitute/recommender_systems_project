@@ -32,7 +32,6 @@ There are several notebooks in this series of demos that outline the application
 1. **amazon_preprocessing**: Download amazon data, preprocess and split into train, validation and test sets.
 2. **a2svd**: Train and evaluate baseline non-sequential recommender system method Asymmetric SVD (a2SVD)
 3. **slirec**: Train and evaluate sequential recommender system method Short-term and Long-term preference Integrated Recommender system (SLi-Rec)
-4. **slirec_hyper_tun**: Train and evaluate a set of SLi-Rec with different hyperparameters. 
 
 ## Environment Configuration 
 From the current directory of the repo, run the following commands:
