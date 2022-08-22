@@ -1,24 +1,24 @@
 # Setting up your Environment
-Log on to the Vector cluster using the following command on your terminal
+Log on to the Vector cluster using the following command on your terminal  
 `ssh <USER_ID>@v.vectorinstitute.ai`
 
-Load Python v3.7 <= 3.7.13
+Load Python v3.7 <= 3.7.13  
 `module load python/3.7.9`
 
-Confirm that the correct module has been loaded
+Confirm that the correct module has been loaded  
 `which python`
 
-You can use the following command to create the environment in the SSD scratch space
+You can use the following command to create the environment in the SSD scratch space  
 `python -m venv /scratch/ssd004/scratch/<USER_ID>/<ENV_NAME>`
 
-Activate your environment using the following command
+Activate your environment using the following command  
 `source /scratch/ssd004/scratch/<USER_ID>/<ENV_NAME>/bin/activate`
 
 # Running the Tutorial
-First install jupyter notebook
+First install jupyter notebook  
 `pip install jupyter`
 
-Next, send a slurm job by first creating a file 
+Next, send a slurm job by first creating a file  
 `vim <JOB_NAME>.slrm`
 
 Paste the following contents into the file
@@ -38,18 +38,18 @@ source /scratch/ssd004/scratch/<USER_ID>/<ENV_NAME>/bin/activate
 jupyter notebook --ip 0.0.0.0 --port 2120
 ```
 
-Make sure you fill in the <JOB_NAME>, <USER_ID>, <ENV_NAME> fields.
+Make sure you fill in the `<JOB_NAME>`, `<USER_ID>`, `<ENV_NAME>` fields.
 
-Run the job
+Run the job  
 `sbatch <JOB_NAME>.slrm`
 
-You can confirm that the job is running
+You can confirm that the job is running  
 `squeue -u <USER_ID>`
 
-To cancel a job, run
+To cancel a job, run  
 `scancel <JOB_ID>`
 
-Open the jupyter_notebook_%j.log file, where j is the JOBID
+Open the jupyter_notebook_%j.log file, where j is the JOBID  
 `cat jupyter_notebook_%<JOB_ID>.log`
 
 You can find the port and gpu number in the output log
@@ -71,10 +71,10 @@ You can find the port and gpu number in the output log
 
 In the example above, the gpu number is gpu061 amd the port is 2120
 
-Open another terminal and run the following command
+Open another terminal and run the following command  
 `ssh <USER_ID>@v.vectorinstitute.ai -NL <PORT>:<GPU#>:<PORT>`
 
 Open a browser with the jupyter notebook link found in the log file or run `http://127.0.0.1:port/`
 
-To install the dependencies needed to run the notebook, go to the folder and run
+To install the dependencies needed to run the notebook, go to the folder and run  
 `pip install -r requirements.txt`
