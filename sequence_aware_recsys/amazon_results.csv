@@ -1,2 +1,0 @@
-auc,ndcg@2,ndcg@4,ndcg@6,group_auc,name
-0.7122,0.391,0.4954,0.5476,0.7033,SLi-Rec
