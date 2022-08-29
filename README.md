@@ -6,7 +6,7 @@ The goal of this project is to explore the potential of Artificial Intelligence 
 4. Knowledge Graph Based Recommender Systems
 5. Reinforcement Learning Based Recommender Systems
 
-**Please Note:** The repository is under active development. As a result, the provided demos will not be stable until they are presented to project participants in the introductory demo sessions in mid-September. 
+**Please Note: The repository is under active development. As a result, the provided demos will not be stable until they are presented to project participants in the introductory demo sessions in mid-September.**
 
 # Accessing Data
 During the project, all of the datasets included in the demo will be available on the Vector cluster at: `/ssd003/projects/aieng/public/recsys_datasets/`
