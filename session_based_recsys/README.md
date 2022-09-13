@@ -1,8 +1,6 @@
 # Recommender Systems
 
 Today, recommendation systems are ubiquitous, spanning sectors as diverse as 
-
-
 *   online retail,
 *   music and video streaming and
 *   content publishing.
@@ -17,14 +15,11 @@ Today, recommendation systems are ubiquitous, spanning sectors as diverse as
 
 There are several types of recommendation systems: **collaborative filtering-based**, **content-based methods**, and **context-aware methods**. 
 
-
-
 *   **Collaborative filtering-based:** It refers to the use of interactions between users and items across a number of users to produce recommendations for one particular user based on the preferences of others. Generally, these systems learn users' long-term preferences based on their historical interactions with items (e.g., what they clicked on in the past)
 
 *   **Content-based:** User preferences for product features can be identified either through previous actions or through explicit feedback.
 
 *   **Context-aware methods:** Information related to context, such as location and time, is leveraged.
-
 
 # Session-Based Recommender Systems
 
@@ -37,7 +32,6 @@ As a result, **session-based recommendation** algorithms have been developed, wh
 <p align="center">
 <img src="https://session-based-recommenders.fastforwardlabs.com/figures/FF19_Artboard_3rev.png" alt="" style="width:80%;>
 </p>
-
 
 ## Benefits of Session-Based Recommender Systems
 
