@@ -1,27 +1,23 @@
-# Introduction 
-The goal of this project is to explore the potential of Artificial Intelligence in Customer Experience, specifically Recommender Systems. This repository contains reference implementations of state-of-the-art recommender system methods on a variety of practical datasets. In particular, three classes of recommender systems are explored. This includes: 
-1. Introduction to Recommender Systems 
-2. Sequence Aware Recommender Systems
-3. Session-Based Recommender Systems 
-4. Knowledge Graph Based Recommender Systems
-5. Reinforcement Learning Based Recommender Systems
+# Content Based Filtering
 
-**Please Note: The repository is under active development. As a result, the provided demos will not be stable until they are presented to project participants in the introductory demo sessions in mid-September.**
+With the rapid growth of data readily available online, recommendation systems have become popular as a type of information filtering system. They improve the relevancy of results shown to users. 
 
-# Accessing Data
-During the project, all of the datasets included in the demo will be available on the Vector cluster at: `/ssd003/projects/aieng/public/recsys_datasets/`
+One popular type of recommendation system is content-based filtering. In this method, the system recommends items that are similar to ones that a user has already liked or interacted with. It could use item metadata such as description, title, director for a movie to make these recommendations. The main idea motivating these sytems is that a user is likely to interact with an item that is similar to one with which they have already interacted.
 
-For external use, we are providing the following [link](https://tinyurl.com/3k972hf8) for downloading the datasets.
+![](https://www.naukri.com/learning/articles/wp-content/uploads/sites/11/2022/01/Content-Based-Filtering.png)
 
-Please write [winnie.au@vectorinstitute.ai](mailto:winnie.au@vectorinstitute.ai) to request access.
+**Advantages** 
+- Content based filtering can capture the specific interests of a user, and can recommend niche items that very few other users are interested in. 
+- The model doesn't need any data about other users, since the recommendations are specific to this user. This makes it easier to scale to a large number of users. 
 
+**Disadvantages**
+- Since the feature representation of the items are hand-engineered to some extent, this technique requires a lot of domain knowledge. Therefore, the model can only be as good as the hand-engineered features. 
+- The model can only make recommendations based on existing interests of the user. In other words, the model has limited ability to expand on the users' existing interests.
 
-# Environment Configuration 
-Vector has provided a global kernel **recsys** that contains all the necessary packages to run the provided demos on the Vector cluster. From the jupyter notebook interface, simply select the **recsys** kernel from the *Change Kernel* dropdown and run the demo. For a comprehensive guide on how to configure the environment on the vector cluster, please refer to [Cluster Access Instructions](https://tinyurl.com/5xy85u5h). 
+To surmount the aformentioned disadvantages, content-enriched models have been proposed that leverage both content features and user-item interactions to generate recommendations. These approaches are also known as hybrid recommender systems since they are a hybrid of collaboarive and content-based filtering. 
 
-If you are looking to configure the environment externally, from the root directory of the repo run the following commands:
-```
-conda create -n recsys python=3.7
-conda activate recsys 
-pip install -r requirements.txt
-```
+## Notebooks 
+There are two notebooks related to content-based filtering. These demos go from data preproccessing to model evaluation. In particular, the demos include the following:
+
+1. **content_based_recsys**: Content Based Filtering on the TMDB movie dataset. 
+2. **two_two_recsys**: Content Enriched Filtering on MovieLens Dataset. 
