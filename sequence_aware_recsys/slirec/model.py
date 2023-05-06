@@ -84,7 +84,8 @@ class SLI_RECModel_Custom(SLI_RECModel):
                         )
             
             avg_step_loss = np.mean(step_loss_list) 
-            avg_step_data_loss = np.mean(step_data_loss)
+            
+            avg_step_data_loss = np.mean(step_data_loss_list)
             
             train_res = {"loss": avg_step_loss, "data_loss": avg_step_data_loss}
             train_info.append((epoch, train_res)) 
@@ -212,7 +213,7 @@ class A2SVDModel_Custom(A2SVDModel):
                         )
             
             avg_step_loss = np.mean(step_loss_list) 
-            avg_step_data_loss = np.mean(step_data_loss)
+            avg_step_data_loss = np.mean(step_data_loss_list)
             
             train_res = {"loss": avg_step_loss, "data_loss": avg_step_data_loss}
             train_info.append((epoch, train_res)) 
