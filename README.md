@@ -1,10 +1,11 @@
 # Introduction 
 The goal of this project is to investigate how artificial intelligence, specifically recommender systems, might improve user experiences in various domains. This repository contains reference implementations of state-of-the-art recommender system methods on a variety of practical datasets. In particular, three classes of recommender systems are explored. This includes: 
 1. Introduction to Recommender Systems 
-2. Sequence Aware Recommender Systems
-3. Session-Based Recommender Systems 
-4. Knowledge Graph Based Recommender Systems
-5. Reinforcement Learning Based Recommender Systems
+2. Collaborative filtering algorithms
+3. Content-based filtering recommender systems
+4. Sequence Aware recommender systems
+5. Session-Based recommender systems 
+6. Knowledge Graph Based Recommender Systems
 
 **Please Note: The repository is under active development. As a result, the provided demos will not be stable until they are presented to project participants in the introductory demo sessions in mid-September.**
 
