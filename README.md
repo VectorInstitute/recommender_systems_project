@@ -1,5 +1,5 @@
 # Introduction 
-The goal of this project is to investigate how artificial intelligence, specifically recommender systems, might improve user experiences in various domains. This repository contains reference implementations of state-of-the-art recommender system methods on a variety of practical datasets. In particular, three classes of recommender systems are explored. This includes: 
+The goal of this project is to investigate how recommender systems, might improve user experiences in various domains. This repository contains reference implementations of state-of-the-art recommender system methods on a variety of practical datasets. In particular, the following classes of recommender systems are explored. This includes: 
 1. Introduction to Recommender Systems 
 2. Collaborative filtering algorithms
 3. Content-based filtering recommender systems
