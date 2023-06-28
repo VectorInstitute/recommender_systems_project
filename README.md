@@ -14,7 +14,7 @@ During the project, all of the datasets included in the demo will be available o
 
 For external use, we are providing the following [link](https://tinyurl.com/2p8mxjsd) for downloading the datasets.
 
-Please write [winnie.au@vectorinstitute.ai](mailto:winnie.au@vectorinstitute.ai) to request access.
+Please write [amirmohammadkz@vectorinstitute.ai ](mailto:amirmohammadkz@vectorinstitute.ai) to request access.
 
 
 # Environment Configuration 
